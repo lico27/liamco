@@ -5,6 +5,7 @@ export type GlobalSite = {
   title: string;
   description: string;
   author: string;
+  fname: string;
   authorPhotoSrc: string;
   logo?: {
     darkThemeSrc?: string;
@@ -13,14 +14,15 @@ export type GlobalSite = {
 };
 
 export const GLOBAL: GlobalSite = {
-  title: "Astro Milidev",
-  description: "a minimalistic blog+portfolio Astro theme",
-  author: "John Doe",
-  authorPhotoSrc: "/johndoe.png",
-  logo: {
-    darkThemeSrc: "/logo/logo_dark.png",
-    lightThemeSrc: "/logo/logo_light.png",
-  }
+  title: "Liam Cottrell | Data Scientist",
+  description: "My data science portfolio",
+  author: "Liam Cottrell",
+  fname: "Liam!",
+  authorPhotoSrc: "/pfp1.png",
+  // logo: {
+  //   darkThemeSrc: "/logo/logo_dark.png",
+  //   lightThemeSrc: "/logo/logo_light.png",
+  // }
 };
 
 
@@ -35,9 +37,9 @@ type HomeSite =  {
 }
 
 export const HOME: HomeSite = {
-  blogEntries: 5,
-  projectEntries: 3,
-  talkEntries: 3,
+  blogEntries: 1,
+  projectEntries: 1,
+  talkEntries: 1,
 };
 
 type BlogSite = CollectionSite & {
@@ -78,20 +80,15 @@ type ContactSite = ContactInfo[]
 export const CONTACT: ContactSite = [
   {
     type: "Email",
-    href: "mailto:email@example.com",
-    displayAs: "email@example.com",
-  },
-  {
-    type: "X",
-    href: "https://x.com/BillGates",
-    displayAs: "@BillGates on X",
+    href: "mailto:liam@liamco.io",
+    displayAs: "liam@liamco.io",
   },
   {
     type: "GitHub",
-    href: "https://github.com/dotnet",
+    href: "https://github.com/lico27",
   },
   {
     type: "LinkedIn",
-    href: "https://www.linkedin.com/in/williamhgates/",
+    href: "https://www.linkedin.com/in/liam-cottrell/",
   },
 ];

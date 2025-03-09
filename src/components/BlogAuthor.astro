@@ -8,13 +8,13 @@ import Contact from "./Contact.astro";
 <div class="start mt-4 flex items-center">
   <img
     src={resolvePath(GLOBAL.authorPhotoSrc, Astro.url.pathname)}
-    alt={GLOBAL.author}
+    alt={GLOBAL.fname}
     class="mr-8 h-24 w-24 rounded-full"
   />
 
   <div class="flex-grow">
     <div>
-      <strong>Hi, I'm {GLOBAL.author}</strong>
+      <strong>Hi, I'm {GLOBAL.fname}</strong>
     </div>
     <Bio small />
     <p>

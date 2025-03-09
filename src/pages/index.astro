@@ -36,12 +36,12 @@ const talks = await getCollectionEntries("talks", HOME.talkEntries ?? 0);
       <div class="animate mb-8 flex items-center justify-center">
         <img
           src={resolvePath(GLOBAL.authorPhotoSrc, Astro.url.pathname)}
-          alt={GLOBAL.author}
+          alt={GLOBAL.fname}
           class="h-48 w-48 rounded-full"
         />
       </div>
       <h1 class="animate text-3xl font-semibold text-black dark:text-white">
-        Hi, I'm {GLOBAL.author}
+        Hi, I'm {GLOBAL.fname}
       </h1>
       <div class="space-y-16">
         <section>
