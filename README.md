@@ -1,5 +1,5 @@
 # my portfolio
 
-  **[made with](https://bartoszlenar.github.io/astro-milidev)** ❤️
+  **[made with Astro Milidev](https://bartoszlenar.github.io/astro-milidev)** ❤️
 
 
